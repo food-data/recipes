@@ -1,0 +1,12 @@
+type RecipeIngredient {
+    indentifier: UUID!
+    name: String!
+    unitText: String
+    value: Float
+}
+
+input RecipeIngredientInput {
+    name: String!
+    unitText: String
+    value: Float
+} 

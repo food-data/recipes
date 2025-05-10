@@ -1,0 +1,14 @@
+enum RecipeCuisineEnum {
+    aziatisch
+    indiaas
+    internationaal
+    italiaans
+    nederlands
+}
+
+enum RecipeCategoryEnum {
+    bijgerecht
+    hoofdgerecht
+    lunch
+    soep
+}

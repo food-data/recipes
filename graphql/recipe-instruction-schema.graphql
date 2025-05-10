@@ -1,0 +1,10 @@
+type RecipeInstruction {
+    indentifier: UUID!
+    position: Int!
+    text: String!
+}
+
+input RecipeInstructionInput {
+    position: Int!
+    text: String!
+}

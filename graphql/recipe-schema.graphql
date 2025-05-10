@@ -1,0 +1,28 @@
+type Recipe {
+    indentifier: UUID!
+    name: String!
+    description: String!
+    text: String
+    recipeCategory: RecipeCategoryEnum!
+    recipeCuisine: RecipeCuisineEnum!
+    recipeInstructions: [RecipeInstruction!]
+    recipeIngredients: [RecipeIngredient!]
+}
+
+type Query {
+    recipes: [Recipe]
+}
+
+input RecipeInput {
+    name: String!
+    description: String!
+    text: String
+    recipeCategory: RecipeCategoryEnum!
+    recipeCuisine: RecipeCuisineEnum!
+    recipeInstructions: [RecipeInstructionInput!]
+    recipeIngredients: [RecipeIngredientInput!]
+}
+
+type Mutation {
+  insertRecipe(input: RecipeInput!): UUID!
+}
